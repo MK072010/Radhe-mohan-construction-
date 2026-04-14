@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Radhe Mohan Construction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body { margin:0; font-family:Arial; background:#f4f4f4; }
+
+nav { background:black; padding:15px; text-align:center; }
+nav a { color:yellow; margin:0 15px; text-decoration:none; font-weight:bold; font-size:18px; cursor:pointer; }
+
+.page { display:none; padding:40px 20px; text-align:center; }
+.active { display:block; }
+
+h2 { font-size:32px; color:#e6b800; }
+p { font-size:18px; }
+
+.card {
+  background:#fff;
+  width:90%;
+  margin:20px auto;
+  padding:25px;
+  border-radius:10px;
+}
+
+.btn {
+  background:black;
+  color:#e6b800;
+  padding:14px 30px;
+  text-decoration:none;
+  border-radius:8px;
+  font-size:18px;
+}
+</style>
+
+<script>
+function showPage(id) {
+  let pages = document.querySelectorAll('.page');
+  pages.forEach(p => p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<a onclick="showPage('home')">Home</a>
+<a onclick="showPage('services')">Services</a>
+<a onclick="showPage('projects')">Projects</a>
+<a onclick="showPage('about')">About</a>
+<a onclick="showPage('contact')">Contact</a>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="page active">
+<img src="home.png" style="width:100%; max-width:500px;">
+<p style="font-size:22px;">We Build Your Dreams With Trust</p>
+
+<h2>Welcome</h2>
+<p>Premium construction services for homes, offices, and commercial projects.</p>
+<br>
+<div style="
+  background:black;
+  color:#e6b800;
+  text-align:center;
+  padding:15px;
+  font-size:15px;
+  letter-spacing:1px;
+">
+   Created by Mohit Prajapat  DarkZone Developer Studio
+</div>
+</div>
+
+<!-- SERVICES -->
+<div id="services" class="page">
+<h2>Our Services</h2>
+
+<div class="card">
+<h3>Building Construction</h3>
+<p>Residential & Commercial building construction.</p>
+</div>
+
+<div class="card">
+<h3>Renovation</h3>
+<p>Complete home and office renovation solutions.</p>
+</div>
+
+<div class="card">
+<h3>Interior Designing</h3>
+<p>Premium interior work for homes & commercial spaces.</p>
+</div>
+</div>
+
+<!-- PROJECTS -->
+<div id="projects" class="page">
+<h2>Our Completed Projects</h2>
+
+<div class="card">
+<h3>500+ Luxury House Construction</h3>
+<p>Completed from 2013 to 2025</p>
+</div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="page">
+<h2>About Our Company</h2>
+
+<div class="card">
+Radhe Mohan Construction Company Pvt. Ltd. is dedicated to delivering 
+top-quality construction work with honesty and professionalism.
+</div>
+
+<div class="card">
+We build single and double floor houses, offices, and hotels.
+</div>
+
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="page">
+<h2>Contact Us</h2>
+ 
+ <div class="card">
+   <p>Radhe Mohan Construction is led by its Founder and CEO, Mohan Lal Kumawat, with a vision to deliver quality and trusted construction services.</p>
+ </div>
+<div class="card">
+<p>Email: <b>mohitkumawat0724@gmail.com</b></p>
+<p>Send us your project details </p>
+</div>
+<a href="mailto:mohitkumawat0724@gmail.com" class="btn">
+  Contact Us
+</a>
+</div>
+
+</body>
+</html>
